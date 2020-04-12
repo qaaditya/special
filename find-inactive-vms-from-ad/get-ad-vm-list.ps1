@@ -3,7 +3,7 @@ $OutputFile = "C:\Temp\Active_VMs.txt"
 $time = (Get-Date).Adddays(-($DaysInactive))
 
 $dirpath = "C:\Temp"
-If(!(test-path $dirpath))
+if(!(test-path $dirpath))
 {
       New-Item -ItemType Directory -Force -Path $dirpath
 }
